@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { InputGroup, Divider, Button } from '@blueprintjs/core';
 
-export function SignUp() {
+export function Login() {
 
     const [loading, setLoading] = useState<boolean>(false)
 
@@ -12,7 +12,7 @@ export function SignUp() {
                     <div className="vh-100 dt w-100 bg-black-70">
                         <div className="dtc v-mid tc  ph3 ph4-l">
                             <div className="bp3-card center bg-white-30 w-500-ns w-50 vh-50-ns vh-50 pa3-ns pa2" >
-                                <h3 className="f3-ns f3 tc blue"> Sign Up </h3>
+                                <h3 className="f3-ns f3 tc blue"> Sign In </h3>
                                 <Divider />
                                 <div className="dt w-100-ns w-100 pa3-ns pa2">
                                     <div className="dtc w-30-ns v-mid black">BA Number </div>
@@ -21,18 +21,6 @@ export function SignUp() {
                                             id={"BA Number"}
                                             placeholder="BA Number"
                                             fill={false}
-                                            className="w-70-ns w-50"
-                                        />
-                                    </div>
-                                </div>
-                                <div className="dt w-100-ns w-100 pa3-ns pa2">
-                                    <div className="dtc w-30-ns v-mid black">Name </div>
-                                    <div className="dtc w-70-ns  v-mid">
-                                        <InputGroup
-                                            id={"Name"}
-                                            placeholder="Name"
-                                            fill={false}
-                                            type="text"
                                             className="w-70-ns w-50"
                                         />
                                     </div>
@@ -50,7 +38,7 @@ export function SignUp() {
                                     </div>
                                 </div>
                                 <Button
-                                    text="Sign Up"
+                                    text="sign in"
                                     intent="primary"
                                     className="center tc w-40-ns w-40 pa3-ns pa3 br4"
                                     loading={loading}
